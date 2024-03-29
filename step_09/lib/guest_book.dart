@@ -82,7 +82,7 @@ class _GuestBookState extends State<GuestBook> {
             const SizedBox(height: 8,),
                 Row(
                   children: [
-                    Text("Atent",style: TextStyle(color: widget.attend ? Colors.blue : Colors.red),),
+                    Text("Atent",style: TextStyle(color: widget.attend ? const Color.fromARGB(255, 104, 163, 211) : Colors.red),),
                     Checkbox(value: widget.attend, onChanged: ((value){
                       setState(() {
                         widget.attend = value!;
